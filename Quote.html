@@ -1,123 +1,135 @@
 <!DOCTYPE html>
-<html lang ="en">
 
+<html lang="en">
 <head>
- <meta charset="utf-8">
- <title> CSP </title>
- <link rel="stylesheet" href="css/Quote.css" > 
-</head>	
-	
+  <meta charset="utf-8">
+  <meta name="viewport" contnent="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <title>CSP</title>
+  <link href="css/Quote.css" rel="stylesheet">
+</head>
 
 <body>
+  <header>
+    <h1>Quote</h1>
 
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
 
-<header>
+        <li><a href="About.html">About</a></li>
 
- <h1> Quote </h1>
+        <li><a href="Contact_Us.html">Contact Us</a></li>
 
-    
-	
-  <nav>	
-  
-	<ul> 
-	  <li><a href="index.html"> Home</a></li> 
-	  <li><a href="About.html"> About</a></li>
-	  <li><a href="Contact_Us.html">Contact Us</a></li>
-	  <li><a href="Quote.html"> Quote</a></li>
-   </ul>
-   
-  </nav>
-  
- </header> 
+        <li><a href="Quote.html">Quote</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <h2><strong>Want an estimate? E-mail us let us know.</strong></h2>
 
-	
+  <form action="mailto:creativespainting@yahoo.com" method="get">
+    <div>
+      First Name <input id="name_first" name="first_last" type="text">
+    </div>
 
- <h2><strong> Want an estimate?  E-mail us let us know. </strong>  </h2>    
- 	
- 	 <form method="get" action="mailto:creativespainting@yahoo.com" >
- 	
- 	  <div>
- 	    <lable for name="name_first">First Name</lable>
- 	    <input type="text" name="first_last" id="name_first"/>
- 	 </div>
- 	 
- 	  <div> 
- 	   <lable for name="name_last">Last Name</lable>
- 	   <input type="text" name="first_last" id="name_last"/>
- 	  </div>
- 	  
- 	  <div>
- 	   <lable for="phone">Phone Number</lable>
- 	   <input type="text" name="phone" id="phone" />
- 	  </div>
- 	  
- 	  <div>
- 	   <label for="email">Email Address</lable>
- 	   <input type="text" name="email" id="email" />
- 	  </div>
- 	  
- 	  <div>
- 	   <lable for="role"> What best describes you?</lable>
- 	 </div>  
- 	 
- 	   <div>
- 	      <select for="role" id="role" >
- 	        <option> Business Owner </option>
- 	        <option> Home Owner </option>
- 	        <option> Contractor </option>
- 	        <option> Subcontractor </option>
- 	        <option> Other </option>
- 	     </select>
- 	 </div>
- 	  
- 	  <div>
- 	   <lable for="regarding"> Regarding </lable>
- 	  </div>
- 	  
- 	  <div>
- 	      <select name="regarding" id="regarding" >
- 	        <option> Requesting Estimate </option>
- 	        <option> General Questions </option>
- 	        <option> Suggestion about our site </option>
- 	        <option> Site Error </option>
- 	        <option> Legal </option>
- 	     </select>
- 	 </div>
- 	 
- 	 <div>
- 	   <lable for="message"> Message</lable>
- 	   <textarea rows="14" cols="40" name="message" id="message"></textarea>
- 	 </div>
- 	 
- 	<div>
- 	  <input type="checkbox" name="email"id="email"/>
- 	  <p> I prefer to be contacted by email </p>
-   </div> 	  
-   
-   <input type="submit" class="button"/>
-   
-   </form>
+    <div>
+      Last Name <input id="name_last" name="first_last" type="text">
+    </div>
 
+    <div>
+      Phone Number <input id="phone" name="phone" type="text">
+    </div>
 
+    <div>
+      <label for="email">Email Address <input id="email" name="email" type=
+      "text"></label>
+    </div>
 
-<aside>	
+    <div>
+      <label for="email">What best describes you?</label>
+    </div>
 
-<h3 class="gurantee"> Our Guarantee - </h3> 
+    <div>
+      <label for="email"><select id="role">
+        <option>
+          Business Owner
+        </option>
 
- <p> We offer conventional and<strong> specialty</strong> paint finishes on both 
-     interior and exterior jobs, as well as color consulting. Therefore, with every job we give a
-     three year guarantee on both exterior and interior jobs. </p>
-     
- <p> Sed id libero sit amet diam imperdiet consectetur nec eu ligula. Donec vel nunc mi, at laoreet tortor. Donec varius velit ut mauris imperdiet varius. Maecenas egestas, ante nec ullamcorper tristique, neque 
-     ligula tincidunt turpis, eu vehicula lacus odio eget dui. </p>  
+        <option>
+          Home Owner
+        </option>
 
-</aside>
+        <option>
+          Contractor
+        </option>
 
-<footer>	
-	<p class="footer"> All rights reserved, Creative's Painting & Refinishing is a registered trademark
-	    CC image courtesy of K.<a href="http://www.flickr.com/photos/kabils/2619917585/">Subramainan</a> </P>
-</footer> 	
-	
+        <option>
+          Subcontractor
+        </option>
+
+        <option>
+          Other
+        </option>
+      </select></label>
+    </div>
+
+    <div>
+      <label for="email">Regarding</label>
+    </div>
+
+    <div>
+      <label for="email"><select id="regarding" name="regarding">
+        <option>
+          Requesting Estimate
+        </option>
+
+        <option>
+          General Questions
+        </option>
+
+        <option>
+          Suggestion about our site
+        </option>
+
+        <option>
+          Site Error
+        </option>
+
+        <option>
+          Legal
+        </option>
+      </select></label>
+    </div>
+
+    <div>
+      <label for="email">Message 
+      <textarea cols="40" id="message" name="message" rows="14">
+</textarea></label>
+    </div>
+
+    <div>
+      <label for="email"><input id="email" name="email" type=
+      "checkbox"></label>
+
+      <p><label for="email">I prefer to be contacted by email</label></p>
+    </div><label for="email"><input class="button" type="submit"></label>
+  </form>
+
+  <aside>
+    <h3 class="gurantee"><label for="email">Our Guarantee -</label></h3>
+
+    <p><label for="email">We offer conventional and <strong>specialty</strong>
+    paint finishes on both interior and exterior jobs, as well as color
+    consulting. Therefore, with every job we give a three year guarantee on
+    both exterior and interior jobs.</label></p>
+  </aside>
+
+  <footer>
+    <p class="footer"><label for="email">All rights reserved, Creative's
+    Painting &amp; Refinishing is a registered trademark CC image courtesy of
+    K.<a href=
+    "http://www.flickr.com/photos/kabils/2619917585/">Subramainan</a></label></p>
+  </footer>
 </body>
 </html>
